@@ -39,10 +39,9 @@ class Solution:
 
 class Solution:
     def sortedSquares(self, nums: List[int]) -> List[int]:
-        num_abs = [abs(num) for num in nums]
+        num_abs = [num**2 for num in nums]
         num_abs.sort()
-        numsq = [num**2 for num in num_abs]
-        return numsq
+        return num_abs
         
 class Solution:
     def rotate(self, nums: List[int], k: int) -> None:
