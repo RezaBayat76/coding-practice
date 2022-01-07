@@ -8,6 +8,6 @@ class Solution:
                 return mid
             elif target > nums[mid]:
                 first = mid + 1
-            elif target < nums(n/2):
+            elif target < nums[mid]:
                 last = mid -1
         return -1
