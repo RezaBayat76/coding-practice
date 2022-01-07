@@ -48,7 +48,9 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        left = nums[k+1:]
-        right = nums[:k+1]
-        out = [*left, *right]
-        nums=out[:]
+        k = k % len(nums)
+        n = len(nums)
+        left = nums[:n-k]
+        right = nums[n-k:]
+        nums[:] = right[:] + left[:]
+        
