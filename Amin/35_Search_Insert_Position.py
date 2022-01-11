@@ -10,4 +10,4 @@ class Solution:
                 first = mid + 1
             elif target < nums[mid]:
                 last = mid -1
-        return left
+        return first
